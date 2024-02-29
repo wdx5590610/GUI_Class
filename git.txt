@@ -1,0 +1,5 @@
+git add .
+git config --global user.email "wdx5590610@yahoo.com.tw"
+git config --golbal user.name "wdx5590610"
+git commit -m "Create Label"
+git push -u origin main
