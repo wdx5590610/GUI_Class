@@ -31,5 +31,26 @@ namespace N11310032
         {
 
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnbutton_Click(object sender, EventArgs e)
+        {
+            label5.Text="按鈕已經按過了";
+            if (btnbutton.Text=="我已經按過了")
+                btnbutton.Text="請按我一下";
+            else if(btnbutton.Text=="請按我一下")
+                btnbutton.Text="我已經按過了";
+        }
+
+        private void buttonPlus_Click(object sender, EventArgs e)
+        {
+            String count = label4.Text;
+            int sum=Int32.Parse(count)+1;
+            label4.Text= sum.ToString();
+        }
     }
 }
