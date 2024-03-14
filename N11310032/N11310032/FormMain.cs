@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -10,9 +11,9 @@ using System.Windows.Forms;
 
 namespace N11310032
 {
-    public partial class Form1 : Form
+    public partial class FormMain : Form
     {
-        public Form1()
+        public FormMain()
         {
             InitializeComponent();
         }
@@ -46,11 +47,34 @@ namespace N11310032
                 btnbutton.Text="我已經按過了";
         }
 
-        private void buttonPlus_Click(object sender, EventArgs e)
+        
+
+        private void label5_Click(object sender, EventArgs e)
         {
-            String count = label4.Text;
-            int sum=Int32.Parse(count)+1;
-            label4.Text= sum.ToString();
+
+        }
+
+
+
+
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+
+            if (button1.Text == "開啟視窗")
+            {
+                button1.Text = "視窗已開啟";
+
+                Form form = new FormButton();
+                form.Show();
+
+            }
+            else
+            {
+
+            }
+
+            
         }
     }
 }

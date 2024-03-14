@@ -2,9 +2,10 @@ C:\Users\MEGAS\Desktop\GUI_Class\N11310032\N11310032\bin\Debug\N11310032.exe.con
 C:\Users\MEGAS\Desktop\GUI_Class\N11310032\N11310032\bin\Debug\N11310032.exe
 C:\Users\MEGAS\Desktop\GUI_Class\N11310032\N11310032\bin\Debug\N11310032.pdb
 C:\Users\MEGAS\Desktop\GUI_Class\N11310032\N11310032\obj\Debug\N11310032.csproj.AssemblyReference.cache
-C:\Users\MEGAS\Desktop\GUI_Class\N11310032\N11310032\obj\Debug\N11310032.Form1.resources
 C:\Users\MEGAS\Desktop\GUI_Class\N11310032\N11310032\obj\Debug\N11310032.Properties.Resources.resources
 C:\Users\MEGAS\Desktop\GUI_Class\N11310032\N11310032\obj\Debug\N11310032.csproj.GenerateResource.cache
 C:\Users\MEGAS\Desktop\GUI_Class\N11310032\N11310032\obj\Debug\N11310032.csproj.CoreCompileInputs.cache
 C:\Users\MEGAS\Desktop\GUI_Class\N11310032\N11310032\obj\Debug\N11310032.exe
 C:\Users\MEGAS\Desktop\GUI_Class\N11310032\N11310032\obj\Debug\N11310032.pdb
+C:\Users\MEGAS\Desktop\GUI_Class\N11310032\N11310032\obj\Debug\N11310032.FormButton.resources
+C:\Users\MEGAS\Desktop\GUI_Class\N11310032\N11310032\obj\Debug\N11310032.FormMain.resources
