@@ -57,20 +57,36 @@ namespace N11310032
         private void button1_Click_2(object sender, EventArgs e)
         {
 
-            if (button1.Text == "開啟視窗")
+            if (button1.Text == "按鈕")
             {
                 button1.Text = "視窗已開啟";
 
-                Form form = new FormButton();
-                form.Show();
+                Form FormButton = new FormButton();
+                FormButton.Show();
 
             }
             else
             {
-
+                
             }
 
             
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (button2.Text == "輸入框")
+            {
+                button2.Text = "視窗已開啟";
+
+                Form form = new FormTextBox();
+                form.Show();
+      
+            }
+            else
+            {
+               
+            }
         }
     }
 }
