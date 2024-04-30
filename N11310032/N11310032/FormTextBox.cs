@@ -68,9 +68,16 @@ namespace N11310032
 
         private void button5_Click(object sender, EventArgs e)
         {
-            int a = Int32.Parse(textBox9.Text);
-            int b = Int32.Parse(textBox10.Text);
-            label11.Text = (a / b).ToString();
+            if (textBox10.Text == "0")
+            {
+                MessageBox.Show("除數不能為0"); 
+            }
+            else
+            {
+                double a = Int32.Parse(textBox9.Text);
+                int b = Int32.Parse(textBox10.Text);
+                label11.Text = (a / b).ToString();
+            }
         }
     }
 }
