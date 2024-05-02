@@ -94,5 +94,11 @@ namespace N11310032
             Form Form1 = new Form1();
             Form1.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form FormTimer= new FormTimer();
+            FormTimer.Show();
+        }
     }
 }

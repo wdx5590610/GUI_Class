@@ -11,3 +11,4 @@ C:\Users\MEGAS\Desktop\GUI_Class\N11310032\N11310032\obj\Debug\N11310032.FormBut
 C:\Users\MEGAS\Desktop\GUI_Class\N11310032\N11310032\obj\Debug\N11310032.FormMain.resources
 C:\Users\MEGAS\Desktop\GUI_Class\N11310032\N11310032\obj\Debug\N11310032.FormTextBox.resources
 C:\Users\MEGAS\Desktop\GUI_Class\N11310032\N11310032\obj\Debug\N11310032.Form1.resources
+C:\Users\MEGAS\Desktop\GUI_Class\N11310032\N11310032\obj\Debug\N11310032.FormTimer.resources
