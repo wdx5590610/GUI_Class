@@ -39,5 +39,16 @@ namespace N11310032
         {
             timer1.Enabled = false;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.secound = 0;
+            label1.Text = String.Format("{0}秒", this.secound);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

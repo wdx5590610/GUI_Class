@@ -100,5 +100,11 @@ namespace N11310032
             Form FormTimer= new FormTimer();
             FormTimer.Show();
         }
+
+        private void btnGame_Click(object sender, EventArgs e)
+        {
+            Form FormGame = new FormGame();
+            FormGame.Show();
+        }
     }
 }
