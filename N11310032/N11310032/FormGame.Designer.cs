@@ -50,9 +50,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(38, 121);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(203, 12);
+            this.label1.Size = new System.Drawing.Size(155, 12);
             this.label1.TabIndex = 1;
-            this.label1.Text = "已隨機產生0~100數字，請在下方作答";
+            this.label1.Text = "按下開始隨機產生0~100數字";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
@@ -60,9 +60,10 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(38, 157);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(134, 12);
+            this.label2.Size = new System.Drawing.Size(155, 12);
             this.label2.TabIndex = 2;
-            this.label2.Text = "提示:請輸入0~100的數字";
+            this.label2.Text = "按下開始隨機產生0~100數字";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // textBox1
             // 

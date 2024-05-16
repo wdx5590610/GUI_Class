@@ -97,6 +97,7 @@
             this.Controls.Add(this.label4);
             this.Name = "FormButton";
             this.Text = "按鈕";
+            this.Load += new System.EventHandler(this.FormButton_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
