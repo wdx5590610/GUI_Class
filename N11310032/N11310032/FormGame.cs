@@ -30,13 +30,13 @@ namespace N11310032
                 {
                     MessageBox.Show("猜對!");
                 }
-                else if (b > a)
+                else if (b > a & b <max)
                 {
                     MessageBox.Show("小一點");
                     this.max = b;
                    
                 }
-                else if (b < a)
+                else if (b < a & b>min)
                 {
                     MessageBox.Show("大一點");
                     this.min = b;
