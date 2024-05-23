@@ -106,5 +106,11 @@ namespace N11310032
             Form FormGame = new FormGame();
             FormGame.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Form FormCheckBox = new FormCheckBox();
+            FormCheckBox.Show();
+        }
     }
 }

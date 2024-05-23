@@ -42,12 +42,12 @@ namespace N11310032
                     this.min = b;
                     
                 }
-                else if (b > max)
+                else if (b >= max)
                 {
                     MessageBox.Show("請輸入小於"+max+"的數字");
                    
                 }
-                else if (b < min)
+                else if (b <= min)
                 {
                     MessageBox.Show("請輸入小於" + min + "的數字");
 
