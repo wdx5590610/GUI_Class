@@ -7,14 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace N11310032
 {
     public partial class FormCheckBox : Form
     {
+      
         public FormCheckBox()
         {
             InitializeComponent();
+            if (!File.Exists("OrderData.csv"))
+                File.WriteAllText("OrderData.csv", "時間,主食,飲品\n", Encoding.UTF8);
         }
 
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
@@ -48,6 +52,7 @@ namespace N11310032
 
         private void button1_Click(object sender, EventArgs e)
         {
+            String main = "",drinking="";
             foreach (Control c in panel1.Controls) 
             {
                 if (c is CheckBox)
@@ -55,7 +60,8 @@ namespace N11310032
                     CheckBox chk = (CheckBox)c;
                     if (chk.Checked)
                     {
-                        MessageBox.Show(chk.Text);
+                        main +=chk.Text+",";
+
                     }
                 }
             }
@@ -66,10 +72,16 @@ namespace N11310032
                     CheckBox chk = (CheckBox)c;
                     if (chk.Checked)
                     {
-                        MessageBox.Show(chk.Text);
+                        drinking +=chk.Text+",";  
                     }
                 }
             }
+            main=main.Remove(main.Length-1, 1);
+            drinking=drinking.Remove(drinking.Length-1, 1);
+            DateTime currentDateTime=DateTime.Now;
+            string formattedDateTime = currentDateTime.ToString("yyyy/MM/dd HH:mm");
+            File.AppendAllText("OrderData.csv", formattedDateTime+","+main+","+drinking+"\n", Encoding.UTF8);
+            MessageBox.Show("主餐:"+main+"\n飲料:"+drinking);
         }
     }
 }
