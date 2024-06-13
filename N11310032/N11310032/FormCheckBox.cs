@@ -60,7 +60,7 @@ namespace N11310032
                     CheckBox chk = (CheckBox)c;
                     if (chk.Checked)
                     {
-                        main +=chk.Text+",";
+                        main +=chk.Text+" ";
 
                     }
                 }
@@ -72,12 +72,18 @@ namespace N11310032
                     CheckBox chk = (CheckBox)c;
                     if (chk.Checked)
                     {
-                        drinking +=chk.Text+",";  
+                        drinking +=chk.Text+" ";  
                     }
                 }
             }
-            main=main.Remove(main.Length-1, 1);
-            drinking=drinking.Remove(drinking.Length-1, 1);
+            if (main.Length>0)
+            {
+                main=main.Remove(main.Length-1, 1);
+            }
+            if (drinking.Length>0)
+            {
+                drinking=drinking.Remove(drinking.Length-1, 1);
+            }
             DateTime currentDateTime=DateTime.Now;
             string formattedDateTime = currentDateTime.ToString("yyyy/MM/dd HH:mm");
             File.AppendAllText("OrderData.csv", formattedDateTime+","+main+","+drinking+"\n", Encoding.UTF8);
